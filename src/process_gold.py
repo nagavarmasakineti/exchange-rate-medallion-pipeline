@@ -1,18 +1,10 @@
 import os
-import requests
-import psycopg2
-import json
 import logging
 from dotenv import load_dotenv
 from datetime import datetime
+from db import get_db_connection
 
-# Configure the logging framework
-logging.basicConfig(
-    filename='pipeline.log',
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
-)
+logger = logging.getLogger("run_pipeline")
 
 #Load Dot env
 load_dotenv()
@@ -26,14 +18,14 @@ DB_CONFIG = {
 }
 
 def process_silever_to_gold():
-    logging.info("***** process_silever_to_gold *****")
+    logger.info("***** process_silever_to_gold *****")
     # Establish Data Connection Here
-    conn = psycopg2.connect(**DB_CONFIG)
+    conn = get_db_connection()
     cursor = conn.cursor()
-    logging.info("Successfully Connected to Database") 
+    logger.info("Successfully Connected to Database") 
     
     try:
-        logging.info("Joining Silver data with Dimensions and calculating rolling metrics...")
+        logger.info("Joining Silver data with Dimensions and calculating rolling metrics...")
         transformation_query = """ with silver_calculated as (
             Select exchage_date, target_currency, rate, 
             avg(rate) OVER(PARTITION BY target_currency ORDER BY exchage_date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS rolling_7day_avg
@@ -48,12 +40,12 @@ def process_silever_to_gold():
         gold_records = cursor.fetchall()
 
         if not gold_records:
-            logging.warning("No matching records found across Silver or dimension tables")
+            logger.warning("No matching records found across Silver or dimension tables")
             cursor.close()
             conn.close()
             return
         # 4. IDEMPOTENT WRITE: Upsert into fact_exchange_rates
-        logging.info(f"Upserting {len(gold_records)} rows into fact_exchange_rates...")
+        logger.info(f"Upserting {len(gold_records)} rows into fact_exchange_rates...")
         
         upsert_query = """
             INSERT INTO fact_exchange_rates (date_key, currency_key, exchange_rate, rolling_7day_avg, created_at)
@@ -70,7 +62,7 @@ def process_silever_to_gold():
 
         # 5. Commit changes safely
         conn.commit()
-        logging.info("** Gold Star Schema update completed successfully! **")
+        logger.info("** Gold Star Schema update completed successfully! **")
     except Exception as e:
         conn.rollback()
         print(f"Gold processing failed: {e}")

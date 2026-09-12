@@ -1,39 +1,23 @@
-import os
-import requests
-import psycopg2
 from psycopg2.extras import execute_values #Fastbulk insert helper
 import json
 import logging
 import pandas as pd
 from datetime import datetime
 from dotenv import load_dotenv
+from db import get_db_connection
 
-# Configure the logging framework
-logging.basicConfig(
-    filename='pipeline.log',
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
-)
+logger = logging.getLogger("run_pipeline")
 
 # Load ENV Values
 load_dotenv()
 
-DB_CONFIG = {
-    "dbname" : os.getenv("DB_NAME"),
-    "user" : os.getenv("DB_USER"),
-    "password" : os.getenv("DB_PASSWORD"),
-    "host" : os.getenv("DB_HOST"),
-    "port" : os.getenv("DB_PORT")
-}
-
 def process_bronze_to_silver():
-    logging.info("**** process_bronze_to_silver ****")
-    conn = psycopg2.connect(**DB_CONFIG)
+    logger.info("**** process_bronze_to_silver ****")
+    conn = get_db_connection()
     try: 
         with conn.cursor() as cur:
             # Read unparsed data from BRONZE
-            logging.info("Fetching Data from BRONZE RAW table")
+            logger.info("Fetching Data from BRONZE RAW table")
             cur.execute("SELECT raw_payload FROM bronze_exchange_rates order by id desc LIMIT 1;")
             row = cur.fetchone()
 
@@ -142,19 +126,19 @@ def process_bronze_to_silver():
                 ============================================================
             """    
             print(balance_sheet)
-            logging.info(balance_sheet)
+            logger.info(balance_sheet)
             if(total_currencies_received == total_rows):
                 success_msg = "RECOUNCILATION SUCCESSFULL : All rows accounted for Math Balance Successfully."
                 print(success_msg)
-                logging.info(success_msg)
+                logger.info(success_msg)
             else:
                 failure_msg = "RECOUNCILATION FAILED : Row count mismatch. Data Leakage Detected."
                 print(failure_msg)
-                logging.info(failure_msg)
+                logger.info(failure_msg)
     except Exception as e:
         conn.rollback()
         print(f"Silver processing failed: {e}")
-        logging.error(f"Silver processing failed: {e}")
+        logger.error(f"Silver processing failed: {e}")
         raise e
 
     finally:

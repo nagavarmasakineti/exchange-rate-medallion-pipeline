@@ -1,0 +1,28 @@
+# Python environment & cache
+venv/
+ENV/
+env/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Environment configurations and secrets
+.env
+.env.test
+
+# Logs Directory and log files
+logs/*.log
+!logs/.gitkeep
+*.log
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+Thumbs.db
+.DS_Store

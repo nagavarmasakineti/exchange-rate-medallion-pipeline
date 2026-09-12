@@ -39,3 +39,7 @@ pip install requests psycopg2-binary python-dotenv pandas
 
 Now rerun the pipeline
 python run_pipline.py
+
+command prompt:
+create directories: mkdir src tests config docs
+move files to directories: move extract_data.py src\
