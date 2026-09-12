@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: currency-medallion-pipeline
+  namespace: default
+spec:
+  schedule: "0 6,18 * * *"
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: pipeline-executor
+            image: nsakineti/currency-pipeline:v1.0.0
+            imagePullPolicy: Always
+            env:
+            - name: DB_NAME
+              value: "practice_db"
+            - name: DB_USER
+              value: "postgres"
+            - name: DB_PASSWORD
+              value: "1234"
+            - name: DB_PORT
+              value: "5432"
+            - name: DB_HOST
+              value: "host.docker.internal"
+          restartPolicy: OnFailure

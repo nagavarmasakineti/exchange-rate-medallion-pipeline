@@ -1,0 +1,339 @@
+2026-06-27 15:58:09,764 - INFO - ===============================================================
+2026-06-27 15:58:10,089 - INFO - ===============================================================
+2026-06-27 15:58:10,090 - INFO - BRONZE Phase Started
+2026-06-27 15:58:13,828 - INFO - Pipeline execution started.
+2026-06-27 15:58:15,658 - INFO - Raw payload successfully loaded
+2026-06-27 15:58:15,659 - INFO - Data Saved Successfully to BRONZE
+2026-06-27 15:58:15,796 - INFO - pipeline executed successfully
+2026-06-27 15:58:15,796 - INFO - BRONZE Phase Completed Successfully
+2026-06-27 15:58:15,797 - INFO - SILVER Phase Started
+2026-06-27 15:58:15,804 - INFO - **** process_bronze_to_silver ****
+2026-06-27 15:58:15,911 - INFO - Fetching Data from BRONZE RAW table
+2026-06-27 15:58:17,025 - INFO - SILVER Phase Completed Successfully
+2026-06-27 15:58:17,025 - INFO - ===============================================================
+2026-06-27 15:58:17,035 - INFO - ===============================================================
+2026-06-27 16:01:01,264 - INFO - ===============================================================
+2026-06-27 16:01:01,264 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-06-27 16:01:01,265 - INFO - ===============================================================
+2026-06-27 16:01:01,266 - INFO - BRONZE Phase Started
+2026-06-27 16:01:02,333 - INFO - Pipeline execution started.
+2026-06-27 16:01:03,828 - INFO - Raw payload successfully loaded
+2026-06-27 16:01:03,829 - INFO - Data Saved Successfully to BRONZE
+2026-06-27 16:01:04,001 - INFO - pipeline executed successfully
+2026-06-27 16:01:04,002 - INFO - BRONZE Phase Completed Successfully
+2026-06-27 16:01:04,003 - INFO - SILVER Phase Started
+2026-06-27 16:01:04,032 - INFO - **** process_bronze_to_silver ****
+2026-06-27 16:01:04,211 - INFO - Fetching Data from BRONZE RAW table
+2026-06-27 16:01:05,402 - INFO - SILVER Phase Completed Successfully
+2026-06-27 16:01:05,402 - INFO - ===============================================================
+2026-06-27 16:01:05,403 - INFO - PIPELINE RUN COMPLETED SUCCESSFULLY WITHOUT ERRORS
+2026-06-27 16:01:05,404 - INFO - ===============================================================
+2026-06-28 15:35:09,614 - INFO - ===============================================================
+2026-06-28 15:35:09,621 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-06-28 15:35:09,621 - INFO - ===============================================================
+2026-06-28 15:35:09,621 - INFO - BRONZE Phase Started
+2026-06-28 15:35:15,497 - INFO - Pipeline execution started.
+2026-06-28 15:35:17,945 - INFO - Raw payload successfully loaded
+2026-06-28 15:35:17,946 - INFO - Data Saved Successfully to BRONZE
+2026-06-28 15:35:18,059 - INFO - pipeline executed successfully
+2026-06-28 15:35:18,075 - INFO - BRONZE Phase Completed Successfully
+2026-06-28 15:35:18,075 - INFO - SILVER Phase Started
+2026-06-28 15:35:18,251 - INFO - **** process_bronze_to_silver ****
+2026-06-28 15:35:18,311 - INFO - Fetching Data from BRONZE RAW table
+2026-06-28 15:35:18,587 - INFO - SILVER Phase Completed Successfully
+2026-06-28 15:35:18,587 - INFO - ===============================================================
+2026-06-28 15:35:18,587 - INFO - PIPELINE RUN COMPLETED SUCCESSFULLY WITHOUT ERRORS
+2026-06-28 15:35:18,587 - INFO - ===============================================================
+2026-06-28 16:15:07,122 - INFO - ===============================================================
+2026-06-28 16:15:07,122 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-06-28 16:15:07,123 - INFO - ===============================================================
+2026-06-28 16:15:07,123 - INFO - BRONZE Phase Started
+2026-06-28 16:15:08,365 - INFO - Pipeline execution started.
+2026-06-28 16:15:09,698 - INFO - Raw payload successfully loaded
+2026-06-28 16:15:09,698 - INFO - Data Saved Successfully to BRONZE
+2026-06-28 16:15:09,822 - INFO - pipeline executed successfully
+2026-06-28 16:15:09,825 - INFO - BRONZE Phase Completed Successfully
+2026-06-28 16:15:09,826 - INFO - SILVER Phase Started
+2026-06-28 16:15:09,844 - INFO - **** process_bronze_to_silver ****
+2026-06-28 16:15:09,983 - INFO - Fetching Data from BRONZE RAW table
+2026-06-28 16:15:09,997 - INFO - Starting SILVER Processing. Total Currencies to process 166
+2026-06-28 16:15:10,915 - INFO - 
+                ============================================================
+                AUDIT BALANCE CONTROL (ABC) SHEET
+                ============================================================
+                Input (BRONZE SOURCE COUNT) : 166
+                Output (Silver Main Table) : 166
+                Output (Silver Exception Table) : 0
+                Total Recounciled SUM : 166
+                ============================================================
+            
+2026-06-28 16:15:10,916 - INFO - RECOUNCILATION SUCCESSFULL : All rows accounted for Math Balance Successfully.
+2026-06-28 16:15:10,916 - INFO - SILVER Phase Completed Successfully
+2026-06-28 16:15:10,919 - INFO - ===============================================================
+2026-06-28 16:15:10,929 - INFO - PIPELINE RUN COMPLETED SUCCESSFULLY WITHOUT ERRORS
+2026-06-28 16:15:10,937 - INFO - ===============================================================
+2026-06-30 20:03:59,532 - INFO - ===============================================================
+2026-06-30 20:03:59,539 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-06-30 20:03:59,540 - INFO - ===============================================================
+2026-06-30 20:03:59,541 - INFO - BRONZE Phase Started
+2026-06-30 20:04:07,106 - INFO - Pipeline execution started.
+2026-06-30 20:04:09,362 - INFO - Raw payload successfully loaded
+2026-06-30 20:04:09,363 - INFO - Data Saved Successfully to BRONZE
+2026-06-30 20:04:09,605 - INFO - pipeline executed successfully
+2026-06-30 20:04:09,606 - INFO - BRONZE Phase Completed Successfully
+2026-06-30 20:04:09,607 - INFO - SILVER Phase Started
+2026-06-30 20:04:09,622 - INFO - **** process_bronze_to_silver ****
+2026-06-30 20:04:09,799 - INFO - Fetching Data from BRONZE RAW table
+2026-06-30 20:04:09,816 - INFO - Starting SILVER Processing. Total Currencies to process 166
+2026-06-30 20:04:11,433 - INFO - 
+                ============================================================
+                AUDIT BALANCE CONTROL (ABC) SHEET
+                ============================================================
+                Input (BRONZE SOURCE COUNT) : 166
+                Output (Silver Main Table) : 166
+                Output (Silver Exception Table) : 0
+                Total Recounciled SUM : 166
+                ============================================================
+            
+2026-06-30 20:04:11,435 - INFO - RECOUNCILATION SUCCESSFULL : All rows accounted for Math Balance Successfully.
+2026-06-30 20:04:11,438 - INFO - SILVER Phase Completed Successfully
+2026-06-30 20:04:11,453 - INFO - GOLD Phase Started
+2026-06-30 20:04:11,494 - INFO - ***** process_silever_to_gold *****
+2026-06-30 20:04:11,606 - INFO - Successfully Connected to Database
+2026-06-30 20:04:11,606 - INFO - Joining Silver data with Dimensions and calculating rolling metrics...
+2026-06-30 20:04:11,642 - INFO - GOLD Phase Completed Successfully
+2026-06-30 20:04:11,645 - INFO - ===============================================================
+2026-06-30 20:04:11,646 - INFO - PIPELINE RUN COMPLETED SUCCESSFULLY WITHOUT ERRORS
+2026-06-30 20:04:11,651 - INFO - ===============================================================
+2026-06-30 20:42:46,378 - INFO - ===============================================================
+2026-06-30 20:42:46,379 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-06-30 20:42:46,380 - INFO - ===============================================================
+2026-06-30 20:42:46,380 - INFO - BRONZE Phase Started
+2026-06-30 20:42:48,570 - INFO - Pipeline execution started.
+2026-06-30 20:42:50,097 - INFO - Raw payload successfully loaded
+2026-06-30 20:42:50,098 - INFO - Data Saved Successfully to BRONZE
+2026-06-30 20:42:50,329 - INFO - pipeline executed successfully
+2026-06-30 20:42:50,329 - INFO - BRONZE Phase Completed Successfully
+2026-06-30 20:42:50,330 - INFO - SILVER Phase Started
+2026-06-30 20:42:50,338 - INFO - **** process_bronze_to_silver ****
+2026-06-30 20:42:50,399 - INFO - Fetching Data from BRONZE RAW table
+2026-06-30 20:42:50,409 - INFO - Starting SILVER Processing. Total Currencies to process 166
+2026-06-30 20:42:50,782 - INFO - 
+                ============================================================
+                AUDIT BALANCE CONTROL (ABC) SHEET
+                ============================================================
+                Input (BRONZE SOURCE COUNT) : 166
+                Output (Silver Main Table) : 166
+                Output (Silver Exception Table) : 0
+                Total Recounciled SUM : 166
+                ============================================================
+            
+2026-06-30 20:42:50,783 - INFO - RECOUNCILATION SUCCESSFULL : All rows accounted for Math Balance Successfully.
+2026-06-30 20:42:50,783 - INFO - SILVER Phase Completed Successfully
+2026-06-30 20:42:50,783 - INFO - GOLD Phase Started
+2026-06-30 20:42:50,791 - INFO - ***** process_silever_to_gold *****
+2026-06-30 20:42:50,846 - INFO - Successfully Connected to Database
+2026-06-30 20:42:50,846 - INFO - Joining Silver data with Dimensions and calculating rolling metrics...
+2026-06-30 20:42:50,863 - INFO - Upserting 166 rows into fact_exchange_rates...
+2026-06-30 20:42:50,982 - INFO - ** Gold Star Schema update completed successfully! **
+2026-06-30 20:42:50,982 - INFO - GOLD Phase Completed Successfully
+2026-06-30 20:42:50,983 - INFO - ===============================================================
+2026-06-30 20:42:50,983 - INFO - PIPELINE RUN COMPLETED SUCCESSFULLY WITHOUT ERRORS
+2026-06-30 20:42:50,983 - INFO - ===============================================================
+2026-07-11 12:05:24,640 - INFO - ===============================================================
+2026-07-11 12:05:24,642 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-07-11 12:05:24,642 - INFO - ===============================================================
+2026-07-11 12:05:24,643 - INFO - BRONZE Phase Started
+2026-07-11 12:05:32,292 - INFO - Pipeline execution started.
+2026-07-11 12:05:33,891 - INFO - Raw payload successfully loaded
+2026-07-11 12:05:33,892 - INFO - Data Saved Successfully to BRONZE
+2026-07-11 12:05:34,026 - INFO - pipeline executed successfully
+2026-07-11 12:05:34,027 - INFO - BRONZE Phase Completed Successfully
+2026-07-11 12:05:34,027 - INFO - SILVER Phase Started
+2026-07-11 12:05:45,464 - INFO - **** process_bronze_to_silver ****
+2026-07-11 12:05:45,593 - INFO - Fetching Data from BRONZE RAW table
+2026-07-11 12:05:45,683 - INFO - SILVER Phase Completed Successfully
+2026-07-11 12:05:45,683 - INFO - GOLD Phase Started
+2026-07-11 12:05:45,693 - INFO - ***** process_silever_to_gold *****
+2026-07-11 12:05:45,775 - INFO - Successfully Connected to Database
+2026-07-11 12:05:45,775 - INFO - Joining Silver data with Dimensions and calculating rolling metrics...
+2026-07-11 12:05:45,888 - INFO - Upserting 166 rows into fact_exchange_rates...
+2026-07-11 12:05:46,123 - INFO - ** Gold Star Schema update completed successfully! **
+2026-07-11 12:05:46,124 - INFO - GOLD Phase Completed Successfully
+2026-07-11 12:05:46,125 - INFO - ===============================================================
+2026-07-11 12:05:46,126 - INFO - PIPELINE RUN COMPLETED SUCCESSFULLY WITHOUT ERRORS
+2026-07-11 12:05:46,130 - INFO - ===============================================================
+2026-07-11 12:15:33,686 - INFO - ===============================================================
+2026-07-11 12:15:33,687 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-07-11 12:15:33,687 - INFO - ===============================================================
+2026-07-11 12:15:33,688 - INFO - BRONZE Phase Started
+2026-07-11 12:15:35,740 - INFO - Pipeline execution started.
+2026-07-11 12:15:37,342 - INFO - Raw payload successfully loaded
+2026-07-11 12:15:37,344 - INFO - Data Saved Successfully to BRONZE
+2026-07-11 12:15:37,483 - INFO - pipeline executed successfully
+2026-07-11 12:15:37,483 - INFO - BRONZE Phase Completed Successfully
+2026-07-11 12:15:37,484 - INFO - SILVER Phase Started
+2026-07-11 12:15:41,205 - INFO - **** process_bronze_to_silver ****
+2026-07-11 12:15:41,279 - INFO - Fetching Data from BRONZE RAW table
+2026-07-11 12:15:41,356 - ERROR - Silver processing failed: name 'rate_value' is not defined
+2026-07-11 12:15:41,356 - ERROR - Critical Exception during SILVER Phase:: name 'rate_value' is not defined
+2026-07-11 12:15:41,356 - INFO - Pipeline halted to prevent corrupting downstream data
+2026-07-11 12:17:57,360 - INFO - ===============================================================
+2026-07-11 12:17:57,360 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-07-11 12:17:57,360 - INFO - ===============================================================
+2026-07-11 12:17:57,361 - INFO - BRONZE Phase Started
+2026-07-11 12:17:58,593 - INFO - Pipeline execution started.
+2026-07-11 12:17:59,659 - INFO - Raw payload successfully loaded
+2026-07-11 12:17:59,660 - INFO - Data Saved Successfully to BRONZE
+2026-07-11 12:17:59,739 - INFO - pipeline executed successfully
+2026-07-11 12:17:59,741 - INFO - BRONZE Phase Completed Successfully
+2026-07-11 12:17:59,742 - INFO - SILVER Phase Started
+2026-07-11 12:18:01,435 - INFO - **** process_bronze_to_silver ****
+2026-07-11 12:18:01,527 - INFO - Fetching Data from BRONZE RAW table
+2026-07-11 12:18:01,855 - INFO - 
+                ============================================================
+                AUDIT BALANCE CONTROL (ABC) SHEET
+                ============================================================
+                Input (BRONZE SOURCE COUNT) : 166
+                Output (Silver Main Table) : 166
+                Output (Silver Exception Table) : 0
+                Total Recounciled SUM : 166
+                ============================================================
+            
+2026-07-11 12:18:01,858 - INFO - RECOUNCILATION SUCCESSFULL : All rows accounted for Math Balance Successfully.
+2026-07-11 12:18:01,859 - INFO - SILVER Phase Completed Successfully
+2026-07-11 12:18:01,859 - INFO - GOLD Phase Started
+2026-07-11 12:18:01,873 - INFO - ***** process_silever_to_gold *****
+2026-07-11 12:18:02,032 - INFO - Successfully Connected to Database
+2026-07-11 12:18:02,033 - INFO - Joining Silver data with Dimensions and calculating rolling metrics...
+2026-07-11 12:18:02,139 - INFO - Upserting 166 rows into fact_exchange_rates...
+2026-07-11 12:18:02,362 - INFO - ** Gold Star Schema update completed successfully! **
+2026-07-11 12:18:02,363 - INFO - GOLD Phase Completed Successfully
+2026-07-11 12:18:02,364 - INFO - ===============================================================
+2026-07-11 12:18:02,364 - INFO - PIPELINE RUN COMPLETED SUCCESSFULLY WITHOUT ERRORS
+2026-07-11 12:18:02,365 - INFO - ===============================================================
+2026-07-17 15:35:15,420 - INFO - ===============================================================
+2026-07-17 15:35:15,422 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-07-17 15:35:15,422 - INFO - ===============================================================
+2026-07-17 15:35:15,422 - INFO - BRONZE Phase Started
+2026-07-17 15:35:39,691 - INFO - Pipeline execution started.
+2026-07-17 15:35:43,198 - INFO - Raw payload successfully loaded
+2026-07-17 15:35:43,200 - INFO - Data Saved Successfully to BRONZE
+2026-07-17 15:35:43,500 - INFO - pipeline executed successfully
+2026-07-17 15:35:43,500 - INFO - BRONZE Phase Completed Successfully
+2026-07-17 15:35:43,501 - INFO - SILVER Phase Started
+2026-07-17 15:36:02,852 - INFO - **** process_bronze_to_silver ****
+2026-07-17 15:36:03,061 - INFO - Fetching Data from BRONZE RAW table
+2026-07-17 15:36:03,435 - INFO - 
+                ============================================================
+                AUDIT BALANCE CONTROL (ABC) SHEET
+                ============================================================
+                Input (BRONZE SOURCE COUNT) : 166
+                Output (Silver Main Table) : 166
+                Output (Silver Exception Table) : 0
+                Total Recounciled SUM : 166
+                ============================================================
+            
+2026-07-17 15:36:03,436 - INFO - RECOUNCILATION SUCCESSFULL : All rows accounted for Math Balance Successfully.
+2026-07-17 15:36:03,436 - INFO - SILVER Phase Completed Successfully
+2026-07-17 15:36:03,436 - INFO - GOLD Phase Started
+2026-07-17 15:36:03,493 - INFO - ***** process_silever_to_gold *****
+2026-07-17 15:36:03,571 - INFO - Successfully Connected to Database
+2026-07-17 15:36:03,571 - INFO - Joining Silver data with Dimensions and calculating rolling metrics...
+2026-07-17 15:36:03,694 - INFO - Upserting 166 rows into fact_exchange_rates...
+2026-07-17 15:36:03,814 - INFO - ** Gold Star Schema update completed successfully! **
+2026-07-17 15:36:03,816 - INFO - GOLD Phase Completed Successfully
+2026-07-17 15:36:03,816 - INFO - ===============================================================
+2026-07-17 15:36:03,816 - INFO - PIPELINE RUN COMPLETED SUCCESSFULLY WITHOUT ERRORS
+2026-07-17 15:36:03,816 - INFO - ===============================================================
+2026-07-19 15:35:12,102 - INFO - ===============================================================
+2026-07-19 15:35:12,106 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-07-19 15:35:12,106 - INFO - ===============================================================
+2026-07-19 15:35:12,106 - INFO - BRONZE Phase Started
+2026-07-19 15:35:16,452 - INFO - Pipeline execution started.
+2026-08-09 15:35:19,205 - INFO - ===============================================================
+2026-08-09 15:35:19,207 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-08-09 15:35:19,207 - INFO - ===============================================================
+2026-08-09 15:35:19,208 - INFO - BRONZE Phase Started
+2026-08-09 15:35:58,685 - INFO - Pipeline execution started.
+2026-08-09 15:36:06,222 - INFO - Raw payload successfully loaded
+2026-08-09 15:36:06,224 - INFO - Data Saved Successfully to BRONZE
+2026-08-09 15:36:06,735 - INFO - pipeline executed successfully
+2026-08-09 15:36:06,735 - INFO - BRONZE Phase Completed Successfully
+2026-08-09 15:36:06,735 - INFO - SILVER Phase Started
+2026-08-09 15:36:49,158 - INFO - **** process_bronze_to_silver ****
+2026-08-09 15:36:49,365 - INFO - Fetching Data from BRONZE RAW table
+2026-08-09 15:36:49,687 - INFO - 
+                ============================================================
+                AUDIT BALANCE CONTROL (ABC) SHEET
+                ============================================================
+                Input (BRONZE SOURCE COUNT) : 166
+                Output (Silver Main Table) : 166
+                Output (Silver Exception Table) : 0
+                Total Recounciled SUM : 166
+                ============================================================
+            
+2026-08-09 15:36:49,687 - INFO - RECOUNCILATION SUCCESSFULL : All rows accounted for Math Balance Successfully.
+2026-08-09 15:36:49,687 - INFO - SILVER Phase Completed Successfully
+2026-08-09 15:36:49,688 - INFO - GOLD Phase Started
+2026-08-09 15:36:49,826 - INFO - ***** process_silever_to_gold *****
+2026-08-09 15:36:49,985 - INFO - Successfully Connected to Database
+2026-08-09 15:36:49,985 - INFO - Joining Silver data with Dimensions and calculating rolling metrics...
+2026-08-09 15:36:50,348 - INFO - Upserting 166 rows into fact_exchange_rates...
+2026-08-09 15:36:50,529 - INFO - ** Gold Star Schema update completed successfully! **
+2026-08-09 15:36:50,529 - INFO - GOLD Phase Completed Successfully
+2026-08-09 15:36:50,529 - INFO - ===============================================================
+2026-08-09 15:36:50,530 - INFO - PIPELINE RUN COMPLETED SUCCESSFULLY WITHOUT ERRORS
+2026-08-09 15:36:50,530 - INFO - ===============================================================
+2026-09-12 09:54:02,714 - INFO - ===============================================================
+2026-09-12 09:54:02,716 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-09-12 09:54:02,716 - INFO - ===============================================================
+2026-09-12 09:54:02,716 - INFO - BRONZE Phase Started
+2026-09-12 09:54:02,725 - ERROR - Critical Exception during BRONZE Phase:: No module named 'requests'
+2026-09-12 09:54:02,726 - INFO - Pipeline halted to prevent corrupting downstream data
+2026-09-12 10:38:00,267 - INFO - ===============================================================
+2026-09-12 10:38:00,273 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-09-12 10:38:00,274 - INFO - ===============================================================
+2026-09-12 10:38:00,274 - INFO - BRONZE Phase Started
+2026-09-12 10:38:01,231 - INFO - Pipeline execution started.
+2026-09-12 10:38:02,649 - INFO - Raw payload successfully loaded
+2026-09-12 10:38:02,649 - INFO - Data Saved Successfully to BRONZE
+2026-09-12 10:38:02,837 - INFO - pipeline executed successfully
+2026-09-12 10:38:02,840 - INFO - BRONZE Phase Completed Successfully
+2026-09-12 10:38:02,840 - INFO - SILVER Phase Started
+2026-09-12 10:38:02,859 - ERROR - Critical Exception during SILVER Phase:: No module named 'pandas'
+2026-09-12 10:38:02,860 - INFO - Pipeline halted to prevent corrupting downstream data
+2026-09-12 10:40:51,853 - INFO - ===============================================================
+2026-09-12 10:40:51,859 - INFO - STARTING EXCHANGE RATE DATA PIPELINE
+2026-09-12 10:40:51,860 - INFO - ===============================================================
+2026-09-12 10:40:51,860 - INFO - BRONZE Phase Started
+2026-09-12 10:40:52,699 - INFO - Pipeline execution started.
+2026-09-12 10:40:54,351 - INFO - Raw payload successfully loaded
+2026-09-12 10:40:54,352 - INFO - Data Saved Successfully to BRONZE
+2026-09-12 10:40:54,452 - INFO - pipeline executed successfully
+2026-09-12 10:40:54,452 - INFO - BRONZE Phase Completed Successfully
+2026-09-12 10:40:54,452 - INFO - SILVER Phase Started
+2026-09-12 10:40:59,064 - INFO - **** process_bronze_to_silver ****
+2026-09-12 10:40:59,230 - INFO - Fetching Data from BRONZE RAW table
+2026-09-12 10:40:59,467 - INFO - 
+                ============================================================
+                AUDIT BALANCE CONTROL (ABC) SHEET
+                ============================================================
+                Input (BRONZE SOURCE COUNT) : 166
+                Output (Silver Main Table) : 166
+                Output (Silver Exception Table) : 0
+                Total Recounciled SUM : 166
+                ============================================================
+            
+2026-09-12 10:40:59,468 - INFO - RECOUNCILATION SUCCESSFULL : All rows accounted for Math Balance Successfully.
+2026-09-12 10:40:59,469 - INFO - SILVER Phase Completed Successfully
+2026-09-12 10:40:59,470 - INFO - GOLD Phase Started
+2026-09-12 10:40:59,483 - INFO - ***** process_silever_to_gold *****
+2026-09-12 10:40:59,562 - INFO - Successfully Connected to Database
+2026-09-12 10:40:59,562 - INFO - Joining Silver data with Dimensions and calculating rolling metrics...
+2026-09-12 10:40:59,859 - INFO - Upserting 166 rows into fact_exchange_rates...
+2026-09-12 10:40:59,978 - INFO - ** Gold Star Schema update completed successfully! **
+2026-09-12 10:40:59,980 - INFO - GOLD Phase Completed Successfully
+2026-09-12 10:40:59,981 - INFO - ===============================================================
+2026-09-12 10:40:59,982 - INFO - PIPELINE RUN COMPLETED SUCCESSFULLY WITHOUT ERRORS
+2026-09-12 10:40:59,983 - INFO - ===============================================================
