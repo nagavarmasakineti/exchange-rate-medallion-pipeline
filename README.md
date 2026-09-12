@@ -47,6 +47,18 @@ An end-to-end, containerized Python data engineering pipeline that ingest daily 
 * *Batch Idempotency:* Uses extras.execute_batch with ON CONFLICT (date_key, currency_key) DO UPDATE to ensure safe, repeatable production execution without data duplication.
 * *Transaction Safety & Rollback:* Uses full PostgreSQL transaction management (conn.commit() and conn.rollback()) wrapped in try...finally blocks to safely close cursors and database connections.
 
+
+## Local Setup
+1.Clone the repository
+```bash
+git clone [https://github.com/nagavarmasakineti/exchange-rate-medallion-pipeline.git]
+cd exchange-rate-medallion-pipeline
+
+cp .env.example .env
+# update .env with your actual database and API credentials
+
+pip install -r requirements.txt
+python src/run_pipline.py 
 ## LOGS Captured
 ```text
 2026-09-12 14:57:47,072 - INFO - ===============================================================
