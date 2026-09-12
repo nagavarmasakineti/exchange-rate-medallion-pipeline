@@ -58,7 +58,7 @@ cp .env.example .env
 # update .env with your actual database and API credentials
 
 pip install -r requirements.txt
-python src/run_pipline.py
+python src/run_pipeline.py
 ``` 
 ## LOGS Captured
 ```text

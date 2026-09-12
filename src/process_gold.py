@@ -9,16 +9,8 @@ logger = logging.getLogger("run_pipeline")
 #Load Dot env
 load_dotenv()
 
-DB_CONFIG = {
-    "dbname":os.getenv("DB_NAME"),
-    "user":os.getenv("DB_USER"),
-    "password":os.getenv("DB_PASSWORD"),
-    "host":os.getenv("DB_HOST"),
-    "port":os.getenv("DB_PORT")
-}
-
 def process_silever_to_gold():
-    logger.info("***** process_silever_to_gold *****")
+    logger.info("***** process_silver_to_gold *****")
     # Establish Data Connection Here
     conn = get_db_connection()
     cursor = conn.cursor()
