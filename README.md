@@ -58,7 +58,8 @@ cp .env.example .env
 # update .env with your actual database and API credentials
 
 pip install -r requirements.txt
-python src/run_pipline.py 
+python src/run_pipline.py
+``` 
 ## LOGS Captured
 ```text
 2026-09-12 14:57:47,072 - INFO - ===============================================================
