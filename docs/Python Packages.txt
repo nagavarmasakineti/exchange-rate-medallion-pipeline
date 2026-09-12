@@ -1,0 +1,121 @@
+# Python Packages
+
+## Defining data types in PYTHON
+name = 'USD' -->String
+is_active = True -->Boolean
+record_count = 1500 -->Number or decimal
+currencies = ['USD', 'INR'] -->Array
+object = {"batch_name": 500, "environment":"Production"} -->Object
+
+## Defining Methods (helpers.py)
+def methodName (parameter1, parameter2, ....):
+  retun (required data)
+### Importing in other file
+#### Just importing one method
+from helper.py import methodName
+#### Importing complete method
+import helpers as hp
+#### To call this function directly the main method should be defined as below
+if __name__ == "__main__":
+  main()
+
+## Configure the logging framework
+import logging
+logging.basicConfig(filename='filename.log',level=logging.INFO,format='%(asctime)s - %(levelname)s - %(message)s',datefmt='%Y-%m-%d %H:%M:%S')
+logging.info(" (required message) ")
+OUTPUT: 2026-09-12 10:40:59,469 - INFO - SILVER Phase Completed Successfully
+Also, print(f"print message : {varableName}")
+
+## Load dotenv Data
+.env --> envName = envValue
+from dotenv import load_dotenv, import os, load_dotenv(), os.getenv("envName")
+
+## REST API Methods (requests)
+(For all the methods these two lines at end are common 
+      response.raise_for_status() -->If HTTP respond with error codes 404 or 500 the script will not crash and it will silently return the codes
+      return response.json())
+import requests
+
+### GET: Retrieves Data --200
+def fetch_api_data(url):
+  response = requests.get(url)
+
+### POST: Create New Data --201
+def create_api_data(url, payload):
+  response - requests.post(url, json=payload)
+
+### PUT: Update Exisiting Data --200
+def update_api_data(url, payload):
+  response - requests.put(url, json=payload)
+
+### DELETE: Remove Data --204 No content
+def delete_api_data(url):
+  response - requests.delete(url)
+
+## DATABASE CURD Operations
+import psycopg2
+from psycopg2.extras import execute_values
+
+### CREATE/INSERT : Bulk insert Records
+def insert_db_records(cursor, table_name, columns, reords):
+  cols = ", ".join(columns)
+  query = f"INSERT INTO {table_name} ({cols}) VALUES %s;"
+  execute_values(cursor, query, records)
+
+### READ/SELECT : Fetch records as list of tuples
+def fetch_db_records(cursor, table_name, condition="1=1"):
+  query = f"SELECT * FROM  {table_name} WHERE {condition};"
+  cursor.execute(query)
+  return cursor.fetchall()
+
+### UPDATE : Update exisiting database records
+def update_db_record(cursor, table_name, set_clause, condition):
+  query = f"UPDATE {table_name} SET {set_clause} WHERE {condition};"
+  cursor.execute(query)
+
+### DELETE : Remove database records
+def delete_db_record(cursor, table_name, condition):
+  query = f"DELETE FROM {table_name} WHERE {condition};"
+  cursor.execute(query)
+
+### Calling these functions in main
+def main():
+  conn = psycopg2.connect(host="localhost", database = "dbName", user="postgres", password="password")
+  cursor = conn.cursor()
+# 1. CREATE
+records = [("EUR", 0.92), ("INR", 1.92), ("USD", 1.00)]
+insert_db_records(cursor, "raw_exchange_rates", ["currency", "rate"], records)
+
+# 2. READ
+rows = fetch_db_records(cursor, "raw_exchange_rates", "currency = 'EUR'")
+
+# 3. UPDATE
+update_db_record(cursor, "raw_exchange_rates", "rate=0.93", "currency = 'EUR'")
+
+# 4. DELETE
+delete_db_record(cursor, "raw_exchange_rates", "currency = 'EUR'")
+
+#commit changes
+conn.commit()
+cursor.close()
+conn.close()
+if __name__ == "__main__"
+   main()
+
+
+## TRY AND Exception
+import sys 
+try:    
+      logging.info("SILVER Phase Started")
+ except Exception as e:
+        logging.error(f"Critical Exception during SILVER Phase:: {e}")
+        logging.info("Pipeline halted to prevent corrupting downstream data")
+        raise e
+        sys.exit(1)
+        (if db conn.rollback())
+finally:
+    (something)
+
+## IF ELSE:
+if(condition):
+else:
