@@ -1,0 +1,41 @@
+GIT Steps:
+=========
+Initializing GIT Repository:
+----------------------------
+git init
+git branch -M main
+git add .
+git commit -m "Feat: complete exchange rate medallion pipeline with ABC audit controls"
+git status
+
+
+REPO Creation:
+1. Sign into GITHUB
+2. Select New Repository add the requeste fields and create new repository
+
+Now from the command prompt:
+git remote add origin https://github.com/nagavarmasakineti/exchange-rate-medallion-pipeline.git --Adding Link for the first time
+git push -u origin main --Adding code
+
+Then I have added a new folder and a file init:
+================================================
+git add Learning/ - Stages the new folder and everything inside it
+git commit -m "Docs: Learning directory with project notes" -Saves a local copy
+git push -upload the changes to github
+
+
+To remove virtual broken environment:
+=====================================
+rmdir /s /q venv
+
+Create a Fresh Virtual Environment
+python -m venv venv
+
+Activate the Environment:
+venv\Scripts\activate
+
+Install Required Packages:
+pip install requests psycopg2-binary python-dotenv pandas
+
+Now rerun the pipeline
+python run_pipline.py
